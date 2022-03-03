@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="invoice.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Invoice Creator</title>
+  </head>
+  <body>
+    <div class="credits">
+      Coded with 💖 by Maaike Wachters <br />
+      Design & assignment by
+      <a href="https://www.scrimba.com" target="_blank" rel="noreferrer"
+        >Scrimba</a
+      >
+      <br />
+      Link to the project on
+      <a
+        href="https://github.com/MaaikeWachters/Invoice-Creator"
+        target="_blank"
+        rel="noreferrer"
+        >Github</a
+      >
+      <br />
+      <a href="/projects.html">Back to projects page</a>
+    </div>
+    <div class="container">
+      <header>
+        <h1>Invoice Creator</h1>
+        <h2>Thanks for choosing GoodCorp, LLC!</h2>
+      </header>
+      <main>
+        <div class="buttons">
+          <button class="btn-task" id="btn-wash-car">Wash Car: $10</button>
+          <button class="btn-task" id="btn-mow-lawn">Mow Lawn: $20</button>
+          <button class="btn-task" id="btn-pull-weeds">Pull Weeds: $30</button>
+        </div>
+        <div class="invoice">
+          <table>
+            <thead>
+              <tr>
+                <th>TASK</th>
+                <th>TOTAL</th>
+              </tr>
+            </thead>
+            <tbody id="services-requested-container"></tbody>
+          </table>
+
+          <hr />
+          <table>
+            <thead>
+              <tr>
+                <th>NOTES</th>
+                <th>TOTAL AMOUNT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="total-amount-el">
+                <td class="note"></td>
+                <td class="total-amount"><span id="total-amount">$0</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="send-invoice-container">
+          <button id="btn-send-invoice">Send invoice</button>
+        </div>
+      </main>
+    </div>
+    <script src="invoice.js"></script>
+  </body>
+</html>
