@@ -112,6 +112,18 @@ nav {
   text-align: left;
 }
 
+.background-cards {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 16px 0;
+  box-shadow: 3px 3px 16px 1px rgba(130,41,74,0.15);
+}
+
+.projects-left-alignment {
+  text-align: left;
+}
+
 @media (max-width: 770px) {
   h1 {
     font-size: 48px;
